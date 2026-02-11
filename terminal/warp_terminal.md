@@ -535,7 +535,7 @@ Infraestructura que potencia Ambient Agents e integraciones:
 winget install Warp.Warp
 
 # O descargar desde:
-# https://app.warp.dev/get_warp?package=exe_x86_64
+# https://app.warp.dev/referral/NVZ438
 ```
 
 ---
