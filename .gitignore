@@ -1,0 +1,124 @@
+# ============================================================================
+# .gitignore para Proyecto de Análisis de Datos con Python
+# ============================================================================
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+da_basic_env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Data files (descomentar si no quieres versionar datasets grandes)
+*.csv
+*.xlsx
+*.parquet
+*.db
+*.sqlite
+
+# Outputs
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+outputs/
+figures/
+plots/
+
+# Logs
+*.log
+logs/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+
+# Test coverage
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# markdown
+ruta_da_basico.md
+
+# Streamlit
+.streamlit/
+
+# Excluir todas las subcarpetas excepto 01_fundamentos
+02_recoleccion/
+03_limpieza/
+04_exploracion/
+05_modelado/
+06_visualizacion/
+07_otros/
+
+# ============================================================================
+# NOTAS:
+# 
+# - Si quieres versionar archivos específicos que están en .gitignore:
+#   git add -f archivo.csv
+#
+# - Para ver qué archivos están siendo ignorados:
+#   git status --ignored
+#
+# - Los notebooks (.ipynb) SÍ se versionan (no están en .gitignore)
+#
+# ============================================================================
