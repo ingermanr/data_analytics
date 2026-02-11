@@ -242,6 +242,6 @@ Si este curso te ha sido útil:
 
 ---
 
-**Desarrollado con ◆ usando Claude (Anthropic)**
+**Desarrollado con Perplexity y GitHub Copilot, usando Claude (Anthropic)**
 
 *Última actualización: Febrero 2026*
