@@ -103,7 +103,6 @@ ruta_da_basico.md
 .streamlit/
 
 # Excluir todas las subcarpetas excepto 01_fundamentos
-02_recoleccion/
 03_limpieza/
 04_exploracion/
 05_modelado/
