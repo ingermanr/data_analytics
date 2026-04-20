@@ -105,9 +105,9 @@ ruta_da_basico.md
 # Excluir todas las subcarpetas excepto 01_fundamentos
 
 
-05_modelado/
-06_visualizacion/
-07_otros/
+# 05_modelado/
+# 06_visualizacion/
+# 07_otros/
 
 # ============================================================================
 # NOTAS:
