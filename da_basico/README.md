@@ -1,56 +1,48 @@
-# ■ Ruta de Analista de Datos Básico con Python
+# Ruta de Analista de Datos Básico con Python
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Notebooks](https://img.shields.io/badge/Notebooks-18-orange.svg)
 ![Status](https://img.shields.io/badge/Status-Completado-success.svg)
 
-## ▸ Descripción
-
-Curso completo y práctico para convertirte en **Analista de Datos** desde cero. 15 notebooks interactivos que cubren desde fundamentos matemáticos hasta proyectos aplicados reales.
-
-**Desarrollado con Claude (Anthropic) - Febrero 2026**
+Curso práctico y gradual para convertirte en **Analista de Datos** desde cero. **18 notebooks** interactivos, en secuencia, que van de los fundamentos matemáticos y estadísticos hasta proyectos aplicados listos para tu portafolio.
 
 ---
 
-## ▪ Estructura del Curso
+## Estructura del curso
 
-### ▸ 01_fundamentos/ (Base Teórica)
-- **01** - Fundamentos Matemáticos y Estadísticos
-- **02** - Programación Python
+Los notebooks están numerados en **orden de aprendizaje**: sigue del `01` al `18` sin saltos. Cada uno construye sobre el anterior, respetando los prerrequisitos.
 
-### ▸ 02_recoleccion/ (Obtención de Datos)
-- **08** - SQL y Bases de Datos
-- **12** - Ingeniería de Datos Básicos
+| # | Notebook | Qué aprendes |
+|---|----------|--------------|
+| 01 | `01_fundamentos_matematicos_estadisticos` | Estadística e intuición cuantitativa (solo conceptos, sin código) |
+| 02 | `02_programacion_python` | La herramienta: sintaxis, estructuras de datos, control de flujo, funciones |
+| 03 | `03_manipulacion_datos_numpy` | Arrays y cálculo vectorizado con NumPy |
+| 04 | `04_analisis_datos_pandas` | El `DataFrame`, la estructura central del análisis |
+| 05 | `05_limpieza_preparacion_datos` | Faltantes, outliers, normalización, codificación |
+| 06 | `06_analisis_exploratorio_datos` | EDA: encontrar patrones, relaciones e *insights* |
+| 07 | `07_visualizacion_datos` | Matplotlib y Seaborn; comunicar con gráficos |
+| 08 | `08_sql_bases_datos` | SQL para consultar datos donde viven |
+| 09 | `09_excel_analisis_datos` | Excel para análisis, y su equivalente en Pandas |
+| 10 | `10_herramientas_bi` | Power BI y Tableau; dashboards de negocio |
+| 11 | `11_control_versiones` | Git y GitHub para versionar y colaborar |
+| 12 | `12_ingenieria_datos_basicos` | ETL/ELT, pipelines, formatos, APIs, data warehousing |
+| 13 | `13_librerias_modernas` | Polars, Plotly, Streamlit y Dash |
+| 14 | `14_fundamentos_modelado_predictivo` | Del análisis descriptivo al predictivo (ML básico) |
+| 15 | `15_regresion_y_clasificacion_basica` | Los dos tipos de problema del aprendizaje supervisado |
+| 16 | `16_evaluacion_modelos_y_decisiones_negocio` | Métricas, umbrales y costo de negocio |
+| 17 | `17_soft_skills_metodologia` | Pensar, comunicar, colaborar y decidir con ética |
+| 18 | `18_proyectos_aplicados` | Capstone: 2 proyectos guiados end-to-end + 3 retos de portafolio |
 
-### ▸ 03_limpieza/ (Preparación de Datos)
-- **05** - Limpieza y Preparación de Datos
-
-### ▸ 04_exploracion/ (Análisis Exploratorio)
-- **03** - Manipulación de Datos con NumPy
-- **04** - Análisis de Datos con Pandas
-- **06** - Análisis Exploratorio de Datos (EDA)
-
-### ▸ 05_modelado/ (Análisis Avanzado)
-- **15** - Proyectos Aplicados (E-commerce, Churn, Marketing, HR)
-
-### ▸ 06_visualizacion/ (Presentación de Datos)
-- **07** - Visualización de Datos
-- **09** - Excel para Análisis de Datos
-- **10** - Herramientas de Business Intelligence
-- **13** - Librerías Modernas (Polars, Plotly, Streamlit, Dash)
-
-### ▸ 07_otros/ (Habilidades Complementarias)
-- **11** - Control de Versiones (Git)
-- **14** - Soft Skills y Metodología
+> **Sobre el orden:** el curso respeta los prerrequisitos. Aprendes Python (02) antes de NumPy (03); NumPy y Pandas (03-04) antes de limpiar datos (05); y a visualizar (07) antes de modelar (14-16). El notebook 01 es solo conceptual (sin código) para separar la estadística de la programación.
 
 ---
 
-## ▸ Inicio Rápido
+## Inicio rápido
 
 ### Prerrequisitos
-
 - Python 3.9 o superior
-- pip (gestor de paquetes)
+- pip
 - Git (opcional)
 
 ### Instalación
@@ -61,187 +53,109 @@ Curso completo y práctico para convertirte en **Analista de Datos** desde cero.
    cd da_basico
    ```
 
-2. **Crear ambiente virtual (recomendado)**
+2. **Crear y activar un entorno virtual (recomendado)**
    ```bash
    python -m venv venv
-   
+
    # Windows
    venv\Scripts\activate
-   
-   # Linux/Mac
+   # Linux / Mac
    source venv/bin/activate
    ```
 
 3. **Instalar dependencias**
    ```bash
-   # Opción 1: Instalación completa
+   # Opción 1: instalación completa
    pip install -r requirements.txt
-   
-   # Opción 2: Solo lo esencial para empezar
-   pip install numpy pandas matplotlib seaborn scipy jupyter
+
+   # Opción 2: solo lo esencial para empezar
+   pip install numpy pandas matplotlib seaborn scipy scikit-learn jupyter
    ```
 
-4. **Iniciar Jupyter**
+4. **Iniciar Jupyter y abrir el notebook 01**
    ```bash
    jupyter lab
    # o
    jupyter notebook
    ```
 
-5. **Abrir cualquier notebook y comenzar a aprender!**
+---
+
+## Cómo usar este curso
+
+1. Empieza por **`01`** y avanza en orden numérico hasta el **`18`**.
+2. **Ejecuta todo el código** mientras lees, no solo leas.
+3. **Modifica los ejemplos**: cambia valores, rompe cosas a propósito y observa qué pasa.
+4. Toma notas en celdas markdown con tus propias observaciones.
+
+### Cada notebook incluye
+- Explicaciones claras con la estructura ¿Qué es? / ¿Para qué sirve? / ¿Cómo se usa?
+- Código ejecutable y comentado (excepto el 01, que es conceptual)
+- Cajas de *tips* y errores comunes de alto valor
+- Ejercicios prácticos y un glosario de referencia
 
 ---
 
-## ▪ Cómo Usar Este Curso
+## ¿Qué aprenderás?
 
-### Ruta Recomendada (Principiantes)
+### Habilidades técnicas
+- Python para análisis de datos
+- NumPy y Pandas (manipulación de datos)
+- Estadística descriptiva e inferencial
+- Limpieza, preparación y *feature engineering*
+- Visualización con Matplotlib, Seaborn y Plotly
+- SQL y bases de datos
+- Excel avanzado y herramientas de BI (Power BI, Tableau)
+- Ingeniería de datos básica (ETL, pipelines, formatos)
+- Modelado predictivo básico (regresión, clasificación, evaluación)
+- Control de versiones con Git
 
-Sigue el orden numérico de los notebooks:
-
-1. Empieza con **01_fundamentos/** (matemáticas y Python)
-2. Continúa con **04_exploracion/** (NumPy, Pandas, EDA)
-3. Aprende sobre **03_limpieza/** (preparación de datos)
-4. Domina **06_visualizacion/** (comunicar resultados)
-5. Explora **02_recoleccion/** (SQL, ingeniería de datos)
-6. Completa **05_modelado/** (proyectos reales)
-7. Refuerza con **07_otros/** (Git, soft skills)
-
-### Para Usuarios con Experiencia
-
-Puedes saltar directamente a:
-- **04_analisis_datos_pandas.ipynb** si ya conoces Python
-- **15_proyectos_aplicados.ipynb** para ver casos prácticos completos
-- **13_librerias_modernas.ipynb** para herramientas avanzadas
-
-### Cada Notebook Incluye:
-
-□ Explicaciones teóricas claras  
-□ Código ejecutable y comentado  
-□ Ejemplos prácticos con datos reales  
-□ Visualizaciones interactivas  
-□ Ejercicios para practicar  
-□ Recursos adicionales  
+### Habilidades de negocio
+- Pensamiento analítico estructurado
+- Comunicación y *storytelling* con datos
+- Traducir métricas a impacto y decisiones
+- Ética y responsabilidad en el uso de datos
 
 ---
 
-## ▪ ¿Qué Aprenderás?
-
-### Habilidades Técnicas
-
-□ Python para análisis de datos
-□ NumPy y Pandas (manipulación de datos)
-□ Estadística descriptiva e inferencial
-□ Visualización con Matplotlib, Seaborn, Plotly
-□ SQL y bases de datos
-□ Excel avanzado para análisis
-□ Herramientas de BI
-□ Ingeniería de datos básica
-□ Librerías modernas (Polars, Streamlit, Dash)
-□ Control de versiones con Git
-
-### Habilidades de Negocio
-
-□ Pensamiento analítico estructurado
-□ Resolución de problemas con datos
-□ Comunicación efectiva de resultados
-□ Storytelling con datos
-□ Trabajo en equipo
-□ Ética en análisis de datos
-
-### Proyectos Aplicados
-
-▫ **E-commerce:** Optimización de conversión
-▫ **FinTech:** Análisis y predicción de churn
-▫ **Marketing:** Performance y ROI
-▫ **HR Analytics:** Retención de talento
-▫ **Sistema Integrado:** Data platform completa
-
----
-
-## ▪ Tecnologías y Librerías
+## Tecnologías y librerías
 
 | Categoría | Librerías |
 |-----------|-----------|
-| **Core Data** | NumPy, Pandas, Polars |
+| **Core** | NumPy, Pandas, Polars |
 | **Visualización** | Matplotlib, Seaborn, Plotly |
-| **Estadística** | SciPy, Statsmodels |
-| **Machine Learning** | Scikit-learn |
-| **Bases de Datos** | SQLAlchemy, PyMySQL |
-| **Dashboards** | Streamlit, Dash |
+| **Estadística / ML** | SciPy, Scikit-learn |
+| **Bases de datos** | SQLite, SQLAlchemy |
+| **Apps y dashboards** | Streamlit, Dash |
+| **Excel** | OpenPyXL, XlsxWriter |
 | **Notebooks** | Jupyter Lab |
-| **Excel** | OpenPyXL, xlsxwriter |
 
 ---
 
-## ▪ Proyectos Destacados
+## Proyectos destacados (notebook 18)
 
-### Proyecto 1: E-commerce Conversion Optimization
-◆ **Objetivo:** Aumentar conversión de 2.3% a 3.5%
-◆ **Técnicas:** Funnel analysis, segmentación, A/B testing
-◆ **Impacto:** +$450-650K/mes revenue potencial
+**Proyecto 1 — E-commerce: optimización de conversión**
+Análisis de *funnel*, segmentación y priorización de mejoras por impacto/esfuerzo.
 
-### Proyecto 2: Churn Analysis en FinTech
-◆ **Objetivo:** Reducir churn de 5.8% a 4.0%
-◆ **Técnicas:** Risk scoring, segmentación predictiva
-◆ **ROI:** 127% ($305K/año)
+**Proyecto 2 — FinTech: análisis de churn y retención**
+*Risk scoring*, segmentación por riesgo y estrategia de retención con análisis de ROI.
+
+Además, el notebook 18 incluye **tres retos guiados** (Marketing, HR y un sistema integrado) con su enunciado, para que construyas tu propio portafolio.
 
 ---
 
-## ▪ Contribuciones
+## Notas
 
-Este es un proyecto educativo abierto. Si encuentras errores o quieres mejorar el contenido:
-
-1. Fork el repositorio
-2. Crea una rama (`git checkout -b feature/mejora`)
-3. Commit tus cambios (`git commit -m 'Añade nueva explicación'`)
-4. Push a la rama (`git push origin feature/mejora`)
-5. Abre un Pull Request
+- **Datos:** todos los datasets son **simulados pero realistas**; se generan dentro de cada notebook.
+- **Entorno:** el código está probado con versiones recientes de las librerías (Python 3.9+, Pandas 2/3, Scikit-learn).
+- **Reproducibilidad:** usa un entorno virtual por proyecto (ver notebook 02 y 11).
 
 ---
 
-## ▪ Notas
+## Contribuciones
 
-▸ **Datos:** Todos los datasets son simulados pero realistas
-▸ **Código:** Todo el código es ejecutable y está comentado
-▸ **Actualización:** Contenido actualizado a febrero 2026
-▸ **Python:** Requiere Python 3.9 o superior
+Este es un proyecto educativo abierto. Si encuentras errores o quieres mejorar el contenido, abre un *issue* o un *pull request*.
 
----
+## Licencia
 
-## ▪ Contacto y Recursos
-
-### Recursos Adicionales
-
-- [Documentación de Pandas](https://pandas.pydata.org/)
-- [Documentación de NumPy](https://numpy.org/)
-- [Matplotlib Gallery](https://matplotlib.org/stable/gallery/)
-- [Kaggle Datasets](https://www.kaggle.com/datasets)
-- [Towards Data Science](https://towardsdatascience.com/)
-
-### Comunidades
-
-- r/datascience
-- r/dataanalysis
-- Stack Overflow
-- Kaggle Forums
-
----
-
-## ▪ Licencia
-
-Este proyecto está bajo la Licencia MIT - ver archivo LICENSE para detalles.
-
----
-
-## ▪ ¿Te gusta el proyecto?
-
-Si este curso te ha sido útil:
-□ Dale una estrella al repositorio
-□ Compártelo con otros
-□ Envía feedback y sugerencias
-
----
-
-**Desarrollado con Perplexity y GitHub Copilot (Claude Sonnet 4.5)**
-
-*Última actualización: Febrero 2026*
+Bajo la Licencia MIT — ver el archivo `LICENSE` para más detalles.
